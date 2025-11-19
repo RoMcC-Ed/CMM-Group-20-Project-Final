@@ -32,6 +32,8 @@ It forms oscillating graph by solving the ODE using RK4 method.
 
 User inputs frequency, safe factor and diameter which outputs an optimum tension and speaking length.
 Then asks user to input a sustain time which then outputs an oscillating graph.
+To terminate this loop, user is required to enter 'q' into sustain time to exit damping exploration. To exit entire program, 'q' again must be entered into target frequency.
+
 numpy, matpotlib.pyplot and scipy.optimize(brentq) are imported.
 
 After defining constants and non linear equation, 
@@ -52,6 +54,7 @@ The user is then asked for inputs to create a oscillating graph(Figure 6 and 7).
 This file explores real word data(figure 10) from Pohlmann's scale design notes ranging from a61 to a37 to our model and produces figure 8 and 9.
 
 No input requied from user, simply run.
+
 numpy, matpotlib.pyplot and scipy.optimize(brentq) are imported.
 
 It defines material characteristics along with the equations for length, working stress, target frequency and diameter as seen before.
