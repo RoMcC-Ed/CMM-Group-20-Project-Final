@@ -81,9 +81,8 @@ def rk4_decay(f, L, d, T60, I):
     y = np.zeros((N, 2))
 
     # initial condition：x(0)=0, v(0)=1/m（Unit impulsive force）
-    I = 1
     x0 = 0.0
-    v0 = I / m
+    v0 = 1 / m
     y[0, :] = [x0, v0]
 
     # RK4 main loop
@@ -210,3 +209,4 @@ if __name__ == "__main__":
             plt.grid(True)
             plt.tight_layout()
             plt.show()
+
