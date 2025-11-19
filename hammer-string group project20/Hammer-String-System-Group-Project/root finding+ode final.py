@@ -50,7 +50,7 @@ def solve_L_T(f_target, SF, d):
 
 # RK4 ODE solver: Using L, d, f, T60 to simulate decay
 
-def rk4_decay(f, L, d, T60, I):
+def rk4_decay(f, L, d, T60):
     """
     Free decay of the string for given design (f, L, d) and sustain time T60.
     Uses the damped oscillator x¨ + 2ζω0 x˙ + ω0^2 x = 0 with RK4.
@@ -209,4 +209,5 @@ if __name__ == "__main__":
             plt.grid(True)
             plt.tight_layout()
             plt.show()
+
 
