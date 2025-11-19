@@ -63,13 +63,13 @@ def rk4_decay(f, L, d, T60):
     #natural frequency
     omega0 = 2.0 * np.pi * f
 
-    # damping ratio ζ from chosen T60:  x(T60)/x(0) = 1/1000
-    zeta = np.log(1000.0) / (omega0 * T60)
+    # damping ratio δ from chosen T60:  x(T60)/x(0) = 1/1000
+    delta = np.log(1000.0) / (omega0 * T60)
 
     # Degree one： y = [x, v]
     def rhs(t, y):
         x, v = y
-        return np.array([v, -2.0*zeta*omega0*v - (omega0**2)*x])
+        return np.array([v, -2.0*delta*omega0*v - (omega0**2)*x])
 
     # time
     t0   = 0.0
@@ -209,5 +209,6 @@ if __name__ == "__main__":
             plt.grid(True)
             plt.tight_layout()
             plt.show()
+
 
 
