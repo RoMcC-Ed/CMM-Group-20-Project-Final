@@ -48,7 +48,7 @@ To create a graph exploring damping, arrays of safety values and length are crea
 The user is then asked for inputs to create a oscillating graph(Figure 6 and 7).
 
 
-## Linear regression and intepolation
+## Regression
 
 
 This file explores real word data(figure 10) from Pohlmann's scale design notes ranging from a61 to a37 to our model and produces figure 8 and 9.
